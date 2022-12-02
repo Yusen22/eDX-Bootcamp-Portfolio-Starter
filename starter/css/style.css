@@ -33,9 +33,17 @@ header {
   padding: 10px;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
 }
 
 h1 {
   min-width: 500px;
   font-size: 350%;
+}
+
+nav a {
+  padding: 10px 75px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
 }
