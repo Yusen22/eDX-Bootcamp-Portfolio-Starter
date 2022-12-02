@@ -1,3 +1,9 @@
+/* Variables */
+
+:root {
+  --portfolioPrimaryColor: rgb(12, 14, 24);
+  --portfolioSecondColor: antiquewhite;
+}
 
 /* General Properties */
 
@@ -30,23 +36,26 @@ p {
 
 header {
   display: flex;
-  padding: 10px;
+  padding: 10px 0px;
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  margin: 0 120px;
+  margin: 0;
+  background-color: rgb(12, 14, 24);
 }
 
 h1 {
   min-width: 500px;
   font-size: 350%;
+  padding: 10px 50px;
+  color: var(--portfolioSecondColor);
  
 }
 
 nav a {
   padding: 10px 75px;
   text-decoration: none;
-  color: black;
+  color: var(--portfolioSecondColor);
   font-size: 1.5rem;
   transition: all 0.4s ease-in-out;
 }
