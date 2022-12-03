@@ -20,6 +20,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: fit-content;
+  background-color: var(--portfolioPrimaryColor);
 }
 
 h1,
@@ -30,7 +31,6 @@ h5,
 h6 {
   margin: 0;
   padding: 10px;
-  align-items: center;
 
 }
 
@@ -40,7 +40,7 @@ p {
 
 header {
   display: flex;
-  padding: 50px 0px;
+  padding: 70px 0px;
   height: auto;
   align-items: center;
   justify-content: space-between;
@@ -49,10 +49,15 @@ header {
   background-color: rgb(12, 14, 24);
 }
 
+#title-ew {
+  display: flex;
+}
+
 h1 {
   
   font-size: 350%;
-  padding: 10px 0px 0px 150px;
+  text-transform: uppercase;
+  padding: 10px 0px 0px 100px;
   color: var(--portfolioSecondColor);
 }
 
@@ -64,13 +69,17 @@ h4  {
 
 nav {
   padding-right: 60px;
+  display: flex;
+  align-items: baseline;
 }
 
 nav a {
-  padding: 10px 90px;
+  padding: 10px 70px;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
   color: var(--portfolioSecondColor);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   transition: all 0.4s ease-in-out;
 }
 
@@ -83,7 +92,10 @@ nav a:hover {
   position: relative;
   display: flex;
   justify-content: center;
- 
+  overflow: hidden;
+  height: 600px;
+  background-color: var(--portfolioPrimaryColor);
+  margin-bottom: 100px;
 }
 
 .hero-banner div {
@@ -94,17 +106,17 @@ nav a:hover {
   background-position: center;
   position: relative;
   transform: scaleX(3.7);
-  transform: translateX();
   width: auto;
   min-height: 400px;
-  box-shadow: inset 0 0 1500px rgb(21, 25, 46);
-  overflow: hidden;
+  max-height: 400px;
+  box-shadow: inset 0 0 1200px rgb(21, 25, 46);
+ 
 }
 
 .hero-banner h2 {
 
   display: inline-block;
-  top: 99%;
+  top: 70%;
   right: 37%;
   color: antiquewhite;
   z-index: 1;
@@ -113,6 +125,8 @@ nav a:hover {
   padding: 50px;
   font-size: 200%;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   /* border-top: 4px solid rgb(82, 82, 83); */
   border-radius: 40px;
  
@@ -122,3 +136,119 @@ main {
   background-color: var(--portfolioPrimaryColor);
   color: var(--portfolioSecondColor);
 }
+
+.page-wrapper {
+  margin: 0 auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  width: 95%;
+  
+}
+
+.topLine {
+width: 25%;
+  border-top: 4px solid white
+}
+
+
+.page-wrapper h2 {
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
+.page-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+.page-section h2 {
+  width: 25%;
+  padding: 20px 50px
+}
+
+
+
+.about {
+  height: 30%
+}
+
+.work {
+  height: 50%
+}
+
+.contact {
+  height: 20%
+}
+
+.rightHand {
+  width: 65%;
+  padding: 0px 80px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  line-height: 1.8;
+}
+
+#bigAbout {
+  color:rebeccapurple;
+  display: inline-block;
+  font-size: 350%;
+  max-width: 200px;
+  text-align: left;
+  margin-right: 50px;
+  line-height: 1.4;
+}
+
+#otherAbout {
+  text-align: left;
+  font-size: 170%;
+}
+
+strong {
+  font-size: 130%
+}
+
+
+
+
+.allWork {
+  display: grid;
+}
+
+
+
+/* .page-wrapper {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+  "abth2 abtp"
+  "wrkh2 wrkp"
+  "cntcth2 cntctp";
+}
+
+.about h2 {
+  grid-area: abth2;
+}
+.about p {
+  grid-area: abtp;
+
+}
+.work h2 {
+  grid-area: wrkh2;
+
+}
+.allWork {
+  grid-area: wrkp;
+}
+.contact h2 {
+  grid-area: cntcth2;
+}
+.contactContent {
+  grid-area: cntctp;
+} */
