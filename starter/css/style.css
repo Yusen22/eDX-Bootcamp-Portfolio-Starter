@@ -2,20 +2,24 @@
 
 :root {
   --portfolioPrimaryColor: rgb(12, 14, 24);
-  --portfolioSecondColor: antiquewhite;
+  --portfolioSecondColor: rgb(250, 230, 203);
 }
 
 /* General Properties */
 
+
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  height: fit-content;
 }
 
 h1,
@@ -27,7 +31,7 @@ h6 {
   margin: 0;
   padding: 10px;
   align-items: center;
-  
+
 }
 
 p {
@@ -36,7 +40,8 @@ p {
 
 header {
   display: flex;
-  padding: 10px 0px;
+  padding: 50px 0px;
+  height: auto;
   align-items: center;
   justify-content: space-between;
   position: sticky;
@@ -47,13 +52,17 @@ header {
 h1 {
   min-width: 500px;
   font-size: 350%;
-  padding: 10px 50px;
+  padding: 10px 50px 10px 150px;
   color: var(--portfolioSecondColor);
- 
+
+}
+
+nav {
+  padding-right: 60px;
 }
 
 nav a {
-  padding: 10px 75px;
+  padding: 10px 90px;
   text-decoration: none;
   color: var(--portfolioSecondColor);
   font-size: 1.5rem;
@@ -65,22 +74,43 @@ nav a:hover {
 }
 
 .hero-banner {
-  background-image: url(../images/pexels-steve-johnson-1044989.jpg);
-  background-repeat: no-repeat;
-  background-size: 600px;
-  transform: scaleX(3.9);
-  background-position: center;
+  margin: 0 auto;
+  position: relative;
   display: flex;
-  min-height: 400px;
-  overflow: hidden;
-  box-shadow: inset 0 0 1000px rgb(21, 25, 46);
+  justify-content: center;
 }
 
 .hero-banner div {
+  background-image: url(../images/pexels-steve-johnson-1044989.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 800px;
+  background-position: center;
+  position: relative;
+  transform: scaleX(2.88);
+  width: auto;
+  min-height: 400px;
+  box-shadow: inset 0 0 1500px rgb(21, 25, 46);
+}
 
-  display: block;
-  right: 500px;
-  top: 300px;
+.hero-banner h2 {
+
+  display: inline-block;
+  top: 99%;
+  right: 37%;
   color: antiquewhite;
   z-index: 1;
+  position: absolute;
+  background-image: linear-gradient(to top, rgb(18, 108, 199, 0.7), transparent 30%);
+  padding: 50px;
+  font-size: 200%;
+  margin-top: 60px;
+  /* border-top: 4px solid rgb(82, 82, 83); */
+  border-radius: 40px;
+ 
+}
+
+main {
+  background-color: var(--portfolioPrimaryColor);
+  color: var(--portfolioSecondColor);
 }
