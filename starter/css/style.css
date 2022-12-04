@@ -54,17 +54,18 @@ header {
 }
 
 h1 {
-  
+
   font-size: 350%;
   text-transform: uppercase;
   padding: 10px 0px 0px 100px;
   color: var(--portfolioSecondColor);
 }
 
-h4  {
+h4 {
   color: var(--portfolioSecondColor);
   align-self: flex-end;
   display: inline;
+  font-size: 120%;
 }
 
 nav {
@@ -110,7 +111,7 @@ nav a:hover {
   min-height: 400px;
   max-height: 400px;
   box-shadow: inset 0 0 1200px rgb(21, 25, 46);
- 
+
 }
 
 .hero-banner h2 {
@@ -129,7 +130,7 @@ nav a:hover {
   margin-right: auto;
   /* border-top: 4px solid rgb(82, 82, 83); */
   border-radius: 40px;
- 
+
 }
 
 main {
@@ -144,11 +145,11 @@ main {
   flex-direction: column;
   align-items: space-between;
   width: 95%;
-  
+
 }
 
 .topLine {
-width: 25%;
+  width: 25%;
   border-top: 4px solid white
 }
 
@@ -156,13 +157,15 @@ width: 25%;
 .page-wrapper h2 {
   font-size: 200%;
   text-transform: uppercase;
+  padding-top: 10px;
+
 }
 
 .page-section {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .page-section h2 {
@@ -173,7 +176,8 @@ justify-content: space-between;
 
 
 .about {
-  height: 30%
+  height: fit-content;
+  margin: 5%;
 }
 
 .work {
@@ -193,62 +197,73 @@ justify-content: space-between;
   line-height: 1.8;
 }
 
+.about .rightHand {
+  padding-top: 50px;
+
+}
+
+#aboutMee {
+  display: flex;
+}
+
 #bigAbout {
-  color:rebeccapurple;
+  color: rebeccapurple;
   display: inline-block;
   font-size: 350%;
-  max-width: 200px;
+  max-width: 220px;
   text-align: left;
   margin-right: 50px;
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
+
+#you {
+  display: inline;
+}
+
+
 
 #otherAbout {
   text-align: left;
   font-size: 170%;
+  padding: 10px;
 }
 
 strong {
-  font-size: 130%
+  font-size: 120%;
+  color: antiquewhite;
 }
 
 
 
 
-.allWork {
+#allWork {
+  height: ;
   display: grid;
-}
-
-
-
-/* .page-wrapper {
-  height: 70vh;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
-  "abth2 abtp"
-  "wrkh2 wrkp"
-  "cntcth2 cntctp";
+  "to-do to-do"
+  "seo calc"
+  "pwsg fold-card"
+  ;
 }
 
-.about h2 {
-  grid-area: abth2;
+#to-do {
+  grid-area: to-do;
 }
-.about p {
-  grid-area: abtp;
 
+#seo {
+  grid-area: seo;
 }
-.work h2 {
-  grid-area: wrkh2;
 
+#calculator {
+  grid-area: calc;
 }
-.allWork {
-  grid-area: wrkp;
+
+#pre-work-study {
+  grid-area: pwsg;
 }
-.contact h2 {
-  grid-area: cntcth2;
+
+#folding-card {
+  grid-area: fold-card;
 }
-.contactContent {
-  grid-area: cntctp;
-} */
