@@ -44,7 +44,7 @@ p {
 
 header {
   display: flex;
- position: fixed;
+  position: fixed;
   width: 100%;
   padding: 70px 0px;
   height: auto;
@@ -82,7 +82,6 @@ nav {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 nav a {
@@ -91,6 +90,7 @@ nav a {
   color: var(--portfolioSecondColor);
   font-size: 1.3rem;
   transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -98,7 +98,7 @@ nav a:hover {
 }
 
 .hero-banner {
-  margin:  auto;
+  margin: auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -160,7 +160,7 @@ main {
 }
 
 .topLine {
-  width: 25%;
+  width: 27%;
   margin-left: 1%;
   border-top: 4px solid white;
 }
@@ -187,7 +187,9 @@ main {
 
 
 
-.about, .work, .contact {
+.about,
+.work,
+.contact {
   height: fit-content;
   margin: 5% 0 5% 10%
 }
@@ -199,6 +201,7 @@ main {
   text-align: center;
   display: flex;
   line-height: 1.8;
+
 }
 
 .about .rightHand {
@@ -247,12 +250,13 @@ strong {
   display: grid;
   position: relative;
   margin: 50px 50px;
+  text-transform: uppercase;
   grid-template-columns: 50% 50%;
   grid-template-rows: 850px 550px 550px;
-  grid-template-areas: 
-  "fold-card fold-card"
-  "seo calc"
-  "pwsg to-do"
+  grid-template-areas:
+    "fold-card fold-card"
+    "seo calc"
+    "pwsg to-do"
   ;
 }
 
@@ -266,7 +270,7 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start; 
+  align-items: flex-start;
   transition: all 0.3s ease-in;
 }
 
@@ -276,10 +280,10 @@ strong {
 
 .rightHand a div {
   display: inline;
- 
+
   width: max-content;
   padding: 15px;
-color: var(--portfolioSecondColor);
+  color: var(--portfolioSecondColor);
   background-color: rgb(12, 14, 24, 0.7);
   transition: all 0.3s ease-in;
 
@@ -328,3 +332,33 @@ color: var(--portfolioSecondColor);
 
 /* Contact CSS */
 
+#contactContent {
+  display: flex;
+  width: 65%;
+  margin-bottom: 5%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 160%;
+  text-align: center;
+}
+
+#contactContent h4 {
+  margin-top: 90px;
+  padding: 20px;
+  width: 400px;
+  text-transform: uppercase;
+  border: 3px solid var(--portfolioSecondColor);
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+#contactContent h4 a {
+  color: var(--portfolioSecondColor);
+  margin: 0px;
+  padding: 0px;
+  font-size: 90%;
+  margin: 0 auto;
+}
