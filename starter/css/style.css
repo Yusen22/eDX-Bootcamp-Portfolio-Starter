@@ -145,6 +145,7 @@ nav a:hover {
 text-transform: uppercase;
   color: antiquewhite;
   padding: 50px;
+  text-align: center;
   font-size: 180%;
   font-weight: bold;
 
@@ -190,6 +191,7 @@ main {
 
 .page-section h2 {
   width: 25%;
+ ;
   
 }
 
@@ -202,8 +204,14 @@ main {
   margin: 5% 0 5% 10%
 }
 
+
+
+.contact {
+  padding-bottom: 5%;
+}
+
 .rightHand {
-  width: 90%;
+  width: 91%;
   padding: 0px;
   margin: 50px auto;
   text-align: center;
@@ -257,6 +265,52 @@ strong {
   color: var(--portfolioThirdColor);
 }
 
+@media only screen and (max-width:2580px) {
+  #otherAbout {
+    font-size: 170%;
+    
+  }
+  
+}
+@media only screen and (max-width:1960px) {
+  #otherAbout {
+    font-size: 150%;
+  }
+  .page-section h2 {
+    width: 25%;
+    padding-right: 500px;
+    
+  }
+  
+}
+
+@media only screen and (max-width:1660px) {
+  #otherAbout {
+    font-size: 130%;
+  }
+  .page-section h2 {
+    width: 25%;
+    padding-right: 340px;
+  }
+  .page-wrapper {
+    width: 95%;
+  }
+  .about,
+.work,
+.contact {
+  height: fit-content;
+  margin: 5% 0 5% 2%
+}
+nav {
+  display: none;
+}
+header {
+  position: relative;
+}
+}
+
+@media only screen and (max-width:1520px)
+
 .work {
   height: fit-content
 }
@@ -297,7 +351,6 @@ strong {
 
 .rightHand a div {
   display: inline;
-
   width: max-content;
   padding: 15px;
   color: var(--portfolioSecondColor);
@@ -346,6 +399,7 @@ strong {
   grid-area: fold-card;
   background-image: url(../images/Folding\ Cards.jpg);
   justify-content: flex-start;
+  background-position: left;
 }
 
 /* Contact CSS */
@@ -381,4 +435,10 @@ strong {
   font-size: 90%;
   margin: 0 auto;
   text-transform: lowercase;
+}
+
+@media only screen and (max-width: 2280px) {
+  #contactContent h4 {
+    margin: 0 8px;
+  }
 }
