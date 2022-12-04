@@ -4,6 +4,7 @@
   --portfolioPrimaryColor: rgb(12, 14, 24);
   --portfolioPrimaryColorFade: rgb(12, 14, 24, 0.3);
   --portfolioSecondColor: rgb(250, 230, 203);
+  --portfolioHoverColor: rgb(177, 169, 158);
 }
 
 /* General Properties */
@@ -88,13 +89,13 @@ nav a {
   padding: 10px 70px;
   font-weight: bolder;
   color: var(--portfolioSecondColor);
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   transition: all 0.4s ease-in-out;
   text-transform: uppercase;
 }
 
 nav a:hover {
-  color: red
+  color: var(--portfolioHoverColor)
 }
 
 .hero-banner {
@@ -105,7 +106,7 @@ nav a:hover {
   overflow: hidden;
   height: 600px;
   background-color: var(--portfolioPrimaryColor);
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   padding-top: 200px;
 
 }
@@ -125,22 +126,24 @@ nav a:hover {
 
 }
 
-.hero-banner h2 {
+.profile {
+  width: 36%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  display: inline-block;
-  top: 70%;
-  right: 37%;
+.profile img {
+  height: 300px;
+}
+
+.profile h2 {
+
+  
   color: antiquewhite;
-  z-index: 1;
-  position: absolute;
-  background-image: linear-gradient(to top, rgb(18, 108, 199, 0.7), transparent 20%);
-  padding: 50px;
-  font-size: 200%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  /* border-top: 4px solid rgb(82, 82, 83); */
-  border-radius: 40px;
 
 }
 
@@ -167,7 +170,7 @@ main {
 
 
 .page-wrapper h2 {
-  font-size: 200%;
+  font-size: 270%;
   text-transform: uppercase;
   padding-top: 10px;
 
@@ -182,7 +185,7 @@ main {
 
 .page-section h2 {
   width: 25%;
-  padding: 20px 50px
+  
 }
 
 
@@ -206,6 +209,8 @@ main {
 
 .about .rightHand {
   padding-top: 50px;
+  margin-right: 55px;
+ 
 
 }
 
@@ -214,12 +219,14 @@ main {
 }
 
 #bigAbout {
-  color: rebeccapurple;
+  color: var(--portfolioHoverColor);
   display: inline-block;
   font-size: 350%;
+  width: 100%;
   max-width: 220px;
   text-align: left;
   margin-right: 50px;
+  margin-left: 3%;
   /* line-height: 1.4; */
 }
 
@@ -231,8 +238,9 @@ main {
 
 #otherAbout {
   text-align: left;
-  font-size: 170%;
+  font-size: 185%;
   padding: 10px;
+  padding-left: 30px;
 }
 
 strong {
@@ -336,7 +344,7 @@ strong {
   display: flex;
   width: 65%;
   margin-bottom: 5%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 160%;
   text-align: center;
@@ -361,4 +369,5 @@ strong {
   padding: 0px;
   font-size: 90%;
   margin: 0 auto;
+  text-transform: lowercase;
 }
