@@ -2,6 +2,7 @@
 
 :root {
   --portfolioPrimaryColor: rgb(12, 14, 24);
+  --portfolioPrimaryColorFade: rgb(12, 14, 24, 0.3);
   --portfolioSecondColor: rgb(250, 230, 203);
 }
 
@@ -21,6 +22,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: fit-content;
   background-color: var(--portfolioPrimaryColor);
+  position: relative;
 }
 
 h1,
@@ -38,15 +40,19 @@ p {
   margin: 0;
 }
 
+
+
 header {
   display: flex;
+ position: fixed;
+  width: 100%;
   padding: 70px 0px;
   height: auto;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
   margin: 0;
   background-color: rgb(12, 14, 24);
+  z-index: 2;
 }
 
 #title-ew {
@@ -61,7 +67,7 @@ h1 {
   color: var(--portfolioSecondColor);
 }
 
-h4 {
+header h4 {
   color: var(--portfolioSecondColor);
   align-self: flex-end;
   display: inline;
@@ -74,10 +80,13 @@ nav {
   align-items: baseline;
 }
 
-nav a {
-  padding: 10px 70px;
+a {
   text-decoration: none;
   text-transform: uppercase;
+}
+
+nav a {
+  padding: 10px 70px;
   font-weight: bolder;
   color: var(--portfolioSecondColor);
   font-size: 1.3rem;
@@ -89,14 +98,16 @@ nav a:hover {
 }
 
 .hero-banner {
-  margin: 0 auto;
+  margin:  auto;
   position: relative;
   display: flex;
   justify-content: center;
   overflow: hidden;
   height: 600px;
   background-color: var(--portfolioPrimaryColor);
-  margin-bottom: 100px;
+  margin-bottom: 300px;
+  padding-top: 200px;
+
 }
 
 .hero-banner div {
@@ -150,7 +161,8 @@ main {
 
 .topLine {
   width: 25%;
-  border-top: 4px solid white
+  margin-left: 1%;
+  border-top: 4px solid white;
 }
 
 
@@ -175,23 +187,15 @@ main {
 
 
 
-.about {
+.about, .work, .contact {
   height: fit-content;
-  margin: 5%;
-}
-
-.work {
-  height: 50%
-}
-
-.contact {
-  height: 20%
+  margin: 5% 0 5% 10%
 }
 
 .rightHand {
-  width: 65%;
-  padding: 0px 80px;
-  margin: 0 auto;
+  width: 90%;
+  padding: 0px;
+  margin: 50px auto;
   text-align: center;
   display: flex;
   line-height: 1.8;
@@ -233,37 +237,94 @@ strong {
   color: antiquewhite;
 }
 
+.work {
+  height: fit-content
+}
 
 
 
 #allWork {
-  height: ;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+  margin: 50px 50px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 850px 550px 550px;
   grid-template-areas: 
-  "to-do to-do"
+  "fold-card fold-card"
   "seo calc"
-  "pwsg fold-card"
+  "pwsg to-do"
   ;
 }
 
+.rightHand a {
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1000px var(--portfolioPrimaryColorFade);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start; 
+  transition: all 0.3s ease-in;
+}
+
+.rightHand a:hover {
+  box-shadow: none;
+}
+
+.rightHand a div {
+  display: inline;
+ 
+  width: max-content;
+  padding: 15px;
+color: var(--portfolioSecondColor);
+  background-color: rgb(12, 14, 24, 0.7);
+  transition: all 0.3s ease-in;
+
+}
+
+.rightHand a:hover div {
+  background-color: rgb(12, 14, 24, 1);
+}
+
+.rightHand a div h3 {
+  font-size: 200%;
+}
+
+.rightHand a div h4 {
+  padding: 0px;
+  font-size: 150%;
+}
+
+
+
 #to-do {
   grid-area: to-do;
+  background-image: url(../images/pexels-breakingpic-3299.jpg);
 }
 
 #seo {
   grid-area: seo;
+  background-image: url(../images/SEO.jpg);
 }
 
 #calculator {
   grid-area: calc;
+  background-image: url(../images/pexels-pixabay-220301.jpg);
 }
 
 #pre-work-study {
   grid-area: pwsg;
+  background-image: url(../images/Prework\ Study.jpg);
 }
 
 #folding-card {
   grid-area: fold-card;
+  background-image: url(../images/Folding\ Cards.jpg);
+  justify-content: flex-start;
 }
+
+/* Contact CSS */
+
